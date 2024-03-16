@@ -1,0 +1,13 @@
+---
+- name: Update Upgrade & Clean APT Linux
+  hosts: all
+
+  become: true
+  become_method: su
+    
+  tasks:
+    - name: APT Package Updater
+      apt:
+        upgrade: yes
+        update_cache: yes
+        clean: yes
