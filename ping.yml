@@ -1,6 +1,8 @@
 ---
 - name: Ping remote servers
   hosts: all
+  vars:
+    ansible_ssh_port: 3891
   gather_facts: no
 
   tasks:
