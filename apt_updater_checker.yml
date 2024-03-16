@@ -1,7 +1,8 @@
 ---
 - name: Update Upgrade & Clean APT Linux
   hosts: all
-
+  vars:
+    ansible_ssh_port: 3891
   become: true
   become_method: su
     
