@@ -1,0 +1,8 @@
+---
+- name: Ping remote servers
+  hosts: 72 Dev
+  gather_facts: no
+
+  tasks:
+    - name: Ping the servers
+      ping:
