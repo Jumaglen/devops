@@ -1,6 +1,6 @@
 ---
 - name: Ping remote servers
-  hosts: 72 Dev
+  hosts: all
   gather_facts: no
 
   tasks:
